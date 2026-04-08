@@ -1,0 +1,125 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(135deg, #0f2027,#134e5e,#2c5364);
+  font-family: 'Segoe UI', sans-serif;
+}
+
+.calculator {
+  background: rgba(199, 84, 170, 0.05);
+  backdrop-filter: blur(20px);
+  padding: 25px;
+  border-radius: 20px;
+  width: 320px;
+  box-shadow: 0 20px 40px rgba(0,0,0,0.5);
+  position: relative;
+  padding-top: 35px; /*space for name*/
+}
+
+/* DISPLAY */
+.display {
+  background: rgba(0,0,0,0.4);
+  border-radius: 12px;
+  padding: 10px 15px;
+  margin-bottom: 20px;
+  color: white;
+  height: 80px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+#history {
+  font-size: 14px;
+  opacity: 0.6;
+  text-align: right;
+}
+
+#result {
+  text-align: right;
+  font-weight: bold;
+  font-size: 32px;
+  font-weight: 600;
+  overflow: hidden;
+  word-wrap: break-word;
+  font-size: clamp(18px, 5vw, 30px);
+}
+
+/* BUTTON GRID */
+.buttons {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 12px;
+}
+
+button {
+  padding: 18px;
+  border: none;
+  border-radius: 12px;
+  font-size: 16px;
+  cursor: pointer;
+  background: rgba(255,255,255,0.08);
+  color: white;
+  transition: all 0.2s ease;
+}
+
+button:hover {
+  transform: translateY(-2px);
+  background: rgba(255,255,255,0.15);
+}
+
+button:active {
+  transform: scale(0.95);
+}
+
+/* Operators */
+.operator {
+  background: #f59e0b;
+}
+
+.operator:hover {
+  background: #d97706;
+}
+
+/* Equal */
+.equal {
+  grid-column: span 2;
+  background: #10b981;
+}
+
+.equal:hover {
+  background: #059669;
+}
+
+/* Clear */
+.clear {
+  background: #ef4444;
+}
+
+.clear:hover {
+  background: #dc2626;
+}
+.brand-box {
+  background: #e94963;
+  grid-column: span 2;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 12px;
+  font-weight: bold;
+  font-size: 15px;
+  letter-spacing: 1px;
+}
+.brand-box:hover {
+   background: #059669;
+   transform: translateY(-2px);
+}

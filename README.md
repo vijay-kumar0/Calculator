@@ -31,7 +31,7 @@ Performs real-time arithmetic operations with a clean and minimal UI.
 
 ## 🌐 Live Demo
 
-👉 https://your-username.github.io/calculator/
+👉 https://vijay-kumar0.github.io/calculator/
 
 ---
 
